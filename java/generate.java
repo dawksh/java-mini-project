@@ -31,7 +31,7 @@ public class PasswordGenerator {
             Random random = new Random();
 
             StringBuilder password = new StringBuilder();
-            for (int i = 0; i < 12; i++) {
+            for (int i = 0; i < length; i++) {
                 int randomIndex = random.nextInt(hexString.length());
                 char randomChar = hexString.charAt(randomIndex);
                 password.append(randomChar);
